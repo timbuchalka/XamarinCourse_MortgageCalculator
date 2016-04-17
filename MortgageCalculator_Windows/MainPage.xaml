@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="MortgageCalculator_Windows.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MortgageCalculator_Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10">
+            <TextBox x:Name="mortgageAmountTextBox"
+                     Header="Mortgage amount ($):"
+                     InputScope="CurrencyAmount"/>
+            <TextBox x:Name="interestRateTextBox"
+                     Header="Interest rate (%):"
+                     InputScope="CurrencyAmount"/>
+            <TextBox x:Name="mortgageTermTextBox"
+                     Header="Mortgage term (years):"
+                     InputScope="Number"/>
+            <Button x:Name="calculateButton"
+                    Click="calculateButton_Click"
+                    HorizontalAlignment="Stretch"
+                    Content="Calculate"
+                    Margin="0 10"
+                    Background="{StaticResource SystemControlForegroundAccentBrush}"
+                    Foreground="White"/>
+            <TextBlock Text="Total monthly payment:"/>
+            <TextBlock x:Name="monthlyPaymentTextBlock"
+                       HorizontalAlignment="Center"
+                       FontSize="25"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource SystemControlForegroundAccentBrush}"/>
+        </StackPanel>
+    </Grid>
+</Page>
