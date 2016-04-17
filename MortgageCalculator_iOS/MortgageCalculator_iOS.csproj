@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>MortgageCalculator_iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MortgageCalculator_iOS</AssemblyName>
+    <AssemblyName>MortgageCalculator_Mac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -108,4 +108,10 @@
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MortgageCalculator_PCL\MortgageCalculator_PCL.csproj">
+      <Project>{E82B3772-F4C4-41DA-BDBC-A81751DAC030}</Project>
+      <Name>MortgageCalculator_PCL</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
