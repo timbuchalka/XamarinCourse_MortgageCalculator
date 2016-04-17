@@ -688,7 +688,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4n-wC-2B7">
+                            <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4n-wC-2B7">
                                 <rect key="frame" x="140" y="164" width="200" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Mortgage term (years)" drawsBackground="YES" id="Qun-Fu-xt3">
                                     <font key="font" metaFont="system"/>
@@ -696,7 +696,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeM-aa-MKX">
+                            <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeM-aa-MKX">
                                 <rect key="frame" x="234" y="118" width="112" height="32"/>
                                 <buttonCell key="cell" type="push" title="Calculate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fZX-sZ-oak">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -732,7 +732,6 @@
                             <constraint firstItem="Ace-yN-NZb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Jc2-7w-TU5"/>
                             <constraint firstItem="Ace-yN-NZb" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="ZwH-FQ-EUL"/>
                             <constraint firstItem="ze5-J1-S9O" firstAttribute="top" secondItem="Ace-yN-NZb" secondAttribute="bottom" constant="10" id="arF-rt-Lzs"/>
-                            <constraint firstItem="zOI-7I-lJz" firstAttribute="width" secondItem="E4n-wC-2B7" secondAttribute="width" id="e3i-oB-sLh"/>
                             <constraint firstItem="E4n-wC-2B7" firstAttribute="centerX" secondItem="ze5-J1-S9O" secondAttribute="centerX" id="haI-W7-lo9"/>
                             <constraint firstItem="ze5-J1-S9O" firstAttribute="centerX" secondItem="Ace-yN-NZb" secondAttribute="centerX" id="ma5-EW-mSy"/>
                             <constraint firstItem="zOI-7I-lJz" firstAttribute="top" secondItem="BeM-aa-MKX" secondAttribute="bottom" constant="8" id="nRt-Bd-Qm3"/>
