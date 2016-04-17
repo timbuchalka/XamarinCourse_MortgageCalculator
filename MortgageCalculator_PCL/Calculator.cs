@@ -15,7 +15,7 @@ namespace MortgageCalculator_PCL
             float monthlyInterestRate = (percentageInterestRate / 100) / 12;
             float monthsMortgageTerm = yearsMortgageTerm * 12;
 
-            monthlyPayment = (monthlyInterestRate * dollarsMortgageAmount * ((float)Math.Pow((1 + monthlyInterestRate), monthsMortgageTerm))) / (((float)Math.Pow((1 + monthlyInterestRate), monthsMortgageTerm)) - 1);
+            monthlyPayment = (monthlyPayment * dollarsMortgageAmount * ((float)Math.Pow((1 + monthlyPayment), monthsMortgageTerm))) / (((float)Math.Pow((1 + monthlyPayment), monthsMortgageTerm)) - 1);
 
             return monthlyPayment;
         }
