@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,7 @@ namespace MortgageCalculator_PCL
             float monthlyInterestRate = (percentageInterestRate / 100) / 12;
             float monthsMortgageTerm = yearsMortgageTerm * 12;
 
+            //! This current formula is wrong.
             monthlyPayment = (monthlyPayment * dollarsMortgageAmount * ((float)Math.Pow((1 + monthlyPayment), monthsMortgageTerm))) / (((float)Math.Pow((1 + monthlyPayment), monthsMortgageTerm)) - 1);
 
             return monthlyPayment;
